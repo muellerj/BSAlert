@@ -1,0 +1,6 @@
+## Interface: 11200
+## Title: BSAlert
+## Author: Ollowain, adapted from ShaguCombat
+## Notes: Notifies you when BattleShout is not up
+## Version: 0.0.1
+BSAlert.lua
