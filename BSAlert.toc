@@ -4,3 +4,4 @@
 ## Notes: Notifies you when BattleShout is not up
 ## Version: 0.0.1
 BSAlert.lua
+BSAlert.xml
