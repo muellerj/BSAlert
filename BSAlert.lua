@@ -4,6 +4,8 @@ local backdrop = {
   insets = {left = 64, right = 64, top = 64, bottom = 64},
 }
 
+local BSAlert_combat = nil;
+
 -- build the frame
 local BSAlert = CreateFrame("Frame")
 BSAlert:SetFrameStrata("BACKGROUND")
