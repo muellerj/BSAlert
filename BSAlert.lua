@@ -12,8 +12,8 @@ end
 
 function BSAlert_OnLoad()
   -- hook into events
-	this:RegisterEvent("PLAYER_REGEN_ENABLED");
-	this:RegisterEvent("PLAYER_REGEN_DISABLED");
+  this:RegisterEvent("PLAYER_REGEN_ENABLED");
+  this:RegisterEvent("PLAYER_REGEN_DISABLED");
   this:RegisterEvent("PLAYER_AURAS_CHANGED");
   
   -- initialize combat tracker
@@ -36,9 +36,9 @@ function BSAlert_OnLoad()
 end
 
 function BSAlert_OnEvent(event)
-	if     (event == "PLAYER_REGEN_DISABLED") then BSAlert_combat = true;
-	elseif (event == "PLAYER_REGEN_ENABLED")  then BSAlert_combat = nil;
-	end
+  if     (event == "PLAYER_REGEN_DISABLED") then BSAlert_combat = true;
+  elseif (event == "PLAYER_REGEN_ENABLED")  then BSAlert_combat = nil;
+  end
   
   if BSAlert_combat and (not HasBuff("player", "Ability_Warrior_BattleShout")) then
     BSAlert:Show();
